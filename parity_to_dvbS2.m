@@ -1,4 +1,4 @@
-%construct from DVB-S2 type parity check matrix text file as table that
+%construct from DVB-S2 type parity check matrix, a text file as table that
 %define a matix in the standard.
 [M,N] = size(Parity);
 K = N-M;
@@ -45,7 +45,7 @@ end
 
 % write matrix
 
-fid = fopen('airbus_matrix.txt','wt');
+fid = fopen('DVBS2_matrix.txt','wt');
 fprintf(fid,'%g\t\n',N);
 fprintf(fid,'%g\t\n',M);
 fprintf(fid,'%g\t\n',q);
